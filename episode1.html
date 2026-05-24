@@ -24,7 +24,7 @@
             <a href="theory.html">Theoretical</a>
             <a href="beginners.html">For beginners</a>
             <a href="about.html">About us</a>
-            <a href="login.html">Sign in</a>
+            <button popovertarget="my-dialog">Sign in</button>
             <div class="nav-right">
             <input type="text" placeholder="Search..." class="search-box">
             <a href="#" class="profile-btn">🔎︎</a>
@@ -73,6 +73,19 @@
             <p>&copy; 2026 Guide for starting pilots. All rights reserved.</p>
         </div>
     </footer>
+
+    <dialog id="my-dialog" popover class="dialog">
+        <button popovertarget="my-dialog" popovertargetaction="hide" class="close-btn">✖</button>
+        <form method="dialog" class="dialog-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+    </dialog>
 
 </body>
 </html>

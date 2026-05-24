@@ -91,15 +91,26 @@
             gap: 30px;
         }
 
-        .nav a {
+        .nav a, .nav button {
             color: white;
             text-decoration: none;
             font-size: 24px;
             font-weight: bold;
             margin-right: 25px;
+            appearance: none;
+            background: none;
+            border: none;
+            font-family: inherit;
+            cursor: pointer;
+            margin: 0;
+            padding: 0;
         }
 
-        nav a:hover {
+        .nav a{
+            margin-top: 2px;
+        }
+
+        .nav a:hover, .nav button:hover {
            color: #4d657f;
         }
 
@@ -301,4 +312,54 @@ li {
 .video-info {
     text-align: center;
     margin-top: 6px;
+}
+
+.dialog {
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%); 
+    padding: 50px 90px;
+    border-radius: 36px;
+}
+
+.dialog::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+.dialog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 34px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dialog-form input {
+    padding: 10px;
+    border: 1px solid var(--color-text-light);
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: var(--color-text-light);
+    font-size: 27px;
+    position: absolute;
+    top: 12px;
+    right: 28px;
+    border: none;
+    cursor: pointer;
 }

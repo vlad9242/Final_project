@@ -19,7 +19,7 @@
             <a href="final.html">Home</a>
             <a href="theory.html">Theoretical</a>
             <a href="about.html">About us</a> 
-            <a href="login.html">Sign in</a>
+            <button popovertarget="my-dialog">Sign in</button>
             <div class="nav-right">
             <input type="text" placeholder="Search..." class="search-box">
             <a href="#" class="profile-btn">🔎︎</a>
@@ -32,7 +32,6 @@
             <a href="#" class="video-link">
             <div class="thumbnail-container">
                 <img src="" alt="Pilot">
-                <div class="play-button"></div>
             </div>
             <div class="video-info">
                 <p class="video-meta">Episode 1</p>
@@ -45,7 +44,6 @@
             <a href="#" class="video-link"></a>
             <div class="thumbnail-container">
                 <img src="" alt="Start plane">
-                <div class="play-button"></div>
             </div>
             <div class="video-info">
                 <p class="video-meta">Episode 2</p>
@@ -57,7 +55,6 @@
             <a href="#" class="video-link"></a>
             <div class="thumbnail-container">
                 <img src="" alt="Fly plane">
-                <div class="play-button"></div>
             </div>
             <div class="video-info">
                 <p class="video-meta">Episode 3</p>
@@ -69,7 +66,6 @@
             <a href="#" class="video-link"></a>
             <div class="thumbnail-container">
                 <img src="" alt="No crash">
-                <div class="play-button"></div>
             </div>
             <div class="video-info">
                 <p class="video-meta">Episode 4</p>
@@ -81,7 +77,6 @@
             <a href="#" class="video-link"></a>
             <div class="thumbnail-container">
                 <img src="" alt="Land plane">
-                <div class="play-button"></div>
             </div>
             <div class="video-info">
                 <p class="video-meta">Episode 5</p>
@@ -93,7 +88,6 @@
             <a href="#" class="video-link"></a>
             <div class="thumbnail-container">
                 <img src="" alt="Pro pilot">
-                <div class="play-button"></div>
             </div>
             <div class="video-info">
                 <p class="video-meta">Episode 6</p>
@@ -106,5 +100,19 @@
             <p>&copy; 2026 Guide for starting pilots. All rights reserved.</p>
         </div>
     </footer>
+
+    <dialog id="my-dialog" popover class="dialog">
+        <button popovertarget="my-dialog" popovertargetaction="hide" class="close-btn">✖</button>
+        <form method="dialog" class="dialog-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+    </dialog>
+
 </body>
 </html>
