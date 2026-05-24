@@ -221,3 +221,30 @@
     z-index: 2
 }
 
+@media (max-width: 600px) {
+    .index-about {
+        padding-bottom: 24px;
+    }
+
+    .index-about-heading {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    .index-about-text :first-of-type {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        padding-right: 0;
+    }
+
+    .index-about-text :first-of-type+* {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .index-about-link {
+        font-size: 14px;
+    }
+}
+
